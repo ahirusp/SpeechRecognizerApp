@@ -1,0 +1,27 @@
+﻿<grammar xml:lang="en-US"
+         root="main"
+         version="1.0"
+         tag-format="semantics/1.0"
+         xmlns="http://www.w3.org/2001/06/grammar">
+  <rule id="main">
+    <item>
+      <ruleref uri="#rule1"/>
+    </item>
+    <item>is</item>
+    <item>
+      <ruleref uri="#rule2"/>
+    </item>
+  </rule>
+  <rule id="rule1">
+    <one-of>
+      <item>this</item>
+      <item>that</item>
+    </one-of>
+  </rule>
+  <rule id="rule2">
+    <one-of>
+      <item>a pen</item>
+      <item>an apple</item>
+    </one-of>
+  </rule>
+</grammar>

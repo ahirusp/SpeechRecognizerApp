@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="SpeechRecognizerApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SpeechRecognizerApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <Button Content="Default" Click="DefaultRecognizing_OnClick" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Content="TopicConstraint" Click="TopicConstraintRecognizing_OnClick" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Content="ListConstraint" Click="ListConstraintRecognizing_OnClick" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Content="GrammarFileConstraint" Click="GrammarFileConstraintRecognizing_OnClick" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    </StackPanel>
+</Page>
